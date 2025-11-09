@@ -1,0 +1,92 @@
+{
+  "buyEnabled": true,
+  "plausibleDomain": "astroboii.xyz",
+  "showUrgencyRibbon": true,
+  "urgencyMessages": [
+    "New orbit window open.",
+    "Helmet hair optional.",
+    "Hydrate before takeoff."
+  ],
+  "metaTitle": "Astro Boii — send it, boii.",
+  "metaDescription": "Logo-only, kinetic, ridiculous—but clean. Hyperactive astronaut energy, zero cringe, professional craft. 3… 2… SEND.",
+  "menu": {
+    "home": "Home",
+    "lore": "Lore",
+    "token": "Token",
+    "roadmap": "Roadmap",
+    "press": "Press Kit",
+    "buy": "Buy",
+    "x": "X",
+    "tg": "TG"
+  },
+  "hero": {
+    "eyebrow": "ZOOMIES IN SPACE",
+    "h1Variants": [
+      ["send it", "boii it"],
+      ["zoom it", "vibe it"],
+      ["no gravity", "only send"]
+    ],
+    "sub": "Letters over pictures. Motion over noise. Confidence over cope.",
+    "buyCta": "Buy on Pump.fun",
+    "secondaryCtas": ["Join Orbit", "Follow Boii"]
+  },
+  "reasons": {
+    "title": "THREE QUICK REASONS",
+    "items": [
+      {
+        "h": "Pure Signal",
+        "p": "No buzzwords, no stock photos. Just attitude and type."
+      },
+      {
+        "h": "Frictionless Launch",
+        "p": "Fair on Pump.fun, 0% tax. Press buy or don't. We're sending either way."
+      },
+      {
+        "h": "Culture Engine",
+        "p": "Memes move markets. We move memes."
+      }
+    ]
+  },
+  "strip": [
+    "Zoomies > roadmaps.",
+    "To the memes.",
+    "No gravity, only send.",
+    "Knees weak, charts steady.",
+    "3… 2… SEND."
+  ],
+  "narrativeBurst": {
+    "title": "Boii's Birth",
+    "body": "LEO router sneezed mid-pump. Zero-G coffee hit dopamine packets. A helmet gremlin crawled out of the Wi-Fi and yelled SEND IT. He never stopped."
+  },
+  "bullishMenu": {
+    "title": "THE VIBE PANEL",
+    "items": [
+      "Fair Launch • Pump.fun propulsion",
+      "0% Tax — vibes don't tax",
+      "0% Treasury — pure meme, pure send",
+      "LP & fees per Pump.fun docs (currently 0.015 SOL on graduation)"
+    ],
+    "disclaimer": "High risk, high zoomies. Hydrate before takeoff."
+  },
+  "community": {
+    "title": "Boii Board",
+    "body": "Post loops with #AstroBoii. Best text-meme gets the homepage spotlight for 24 hours. Letters only. Be loud."
+  },
+  "roadmapPreview": {
+    "title": "ZOOMMAP",
+    "bullets": [
+      "Week 1: Helmet Noise — type-loop shorts",
+      "Week 2: Drift Day — raid hour",
+      "Week 3: Zero-G Karaoke — voice channel chaos",
+      "Ongoing: Meme Olympics — monthly"
+    ]
+  },
+  "footer": {
+    "legal": "Pure meme. Not investment advice. Some regions may be restricted.",
+    "region": "Heads-up: access to third-party platforms may vary by country."
+  },
+  "toggleTips": {
+    "reduceMotionOn": "Motion trimmed. Oxygen saved.",
+    "reduceMotionOff": "Motion restored. Thrusters online."
+  }
+}

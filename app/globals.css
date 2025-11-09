@@ -1,0 +1,78 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-bg: #0d101a;
+  --color-fg: #f9f6f0;
+  --color-accent: #36e7ff;
+  --color-accent-2: #fff0b3;
+  --color-sky-blue: #81d5ff;
+  --color-subtle: #1b1f2a;
+  --radius-xl: 1.25rem;
+  --shadow-glow: 0 0 48px color-mix(in srgb, var(--color-accent) 35%, transparent);
+  --border-neon: 1.5px solid color-mix(in srgb, var(--color-accent) 60%, transparent);
+}
+
+@layer base {
+  * {
+    @apply border-subtle;
+  }
+
+  body {
+    @apply bg-bg text-fg font-body antialiased;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-display font-bold;
+  }
+
+  /* Focus visible rings */
+  *:focus-visible {
+    @apply outline-none ring-2 ring-accent ring-offset-2 ring-offset-bg;
+  }
+
+  /* Skip to content link */
+  .skip-to-content {
+    @apply absolute left-0 top-0 z-50 -translate-y-full bg-accent px-4 py-2 text-bg font-bold;
+    @apply focus:translate-y-0;
+  }
+}
+
+@layer utilities {
+  .text-gradient {
+    @apply bg-gradient-to-r from-accent via-sky-blue to-accent-2 bg-clip-text text-transparent;
+  }
+
+  .neon-border {
+    border: var(--border-neon);
+  }
+
+  .glow {
+    box-shadow: var(--shadow-glow);
+  }
+
+  .prose-custom {
+    @apply max-w-prose text-fg/90 leading-relaxed;
+  }
+
+  .prose-custom a {
+    @apply text-accent underline decoration-accent/50 hover:decoration-accent transition-colors;
+  }
+}
+
+/* Reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}

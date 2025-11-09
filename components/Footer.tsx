@@ -1,0 +1,19 @@
+"use client";
+
+import { getStrings } from "@/lib/content-loader";
+
+const strings = getStrings();
+
+export default function Footer() {
+  return (
+    <footer className="py-12 px-6 bg-subtle border-t neon-border">
+      <div className="container mx-auto max-w-4xl text-center space-y-4">
+        <p className="text-fg/60 text-sm">{strings.footer.legal}</p>
+        <p className="text-fg/40 text-xs">{strings.footer.region}</p>
+        <p className="text-fg/30 text-xs mt-6">
+          © {new Date().getFullYear()} Astro Boii. Built with zoomies.
+        </p>
+      </div>
+    </footer>
+  );
+}
