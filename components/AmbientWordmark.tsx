@@ -18,9 +18,8 @@ export default function AmbientWordmark() {
         }`}
         style={{
           WebkitTextStroke: "2px rgba(54, 231, 255, 0.1)",
-          textStroke: "2px rgba(54, 231, 255, 0.1)",
           paintOrder: "stroke fill",
-        }}
+        } as React.CSSProperties}
       >
         ASTRO BOII
       </div>
