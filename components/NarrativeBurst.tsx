@@ -27,7 +27,10 @@ export default function NarrativeBurst({ narrativeBurst, buyCta, buyEnabled, pum
               href={pumpLink}
               target="_blank"
               rel="noopener noreferrer"
-              className="btn-primary-buy flex items-center gap-2"
+              className="px-8 py-4 bg-gradient-to-r from-accent to-accent-2 text-bg font-bold rounded-xl transition-all duration-300 flex items-center gap-2 hover:scale-105"
+              style={{
+                boxShadow: "0 0 20px rgba(54, 231, 255, 0.3)"
+              }}
             >
               {buyCta}
             </a>

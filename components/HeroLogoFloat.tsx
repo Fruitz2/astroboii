@@ -13,17 +13,17 @@ export default function HeroLogoFloat() {
 
   return (
     <div className="mb-8 relative">
-      <div className="absolute inset-0 bg-gradient-to-b from-accent/20 to-transparent blur-3xl" />
+      <div className="absolute inset-0 bg-gradient-to-b from-accent/30 to-transparent blur-3xl scale-150" />
       <Image
         src="/logo.png"
         alt="Astro Boii"
-        width={180}
-        height={180}
+        width={240}
+        height={240}
         className={`relative mx-auto rounded-full border-2 border-accent/30 shadow-2xl ${
-          reducedMotion ? "" : "animate-float"
+          reducedMotion ? "" : "animate-float animate-pulse-slow"
         }`}
         style={{
-          boxShadow: "0 0 60px rgba(54, 231, 255, 0.4), 0 20px 40px rgba(0, 0, 0, 0.5)"
+          boxShadow: "0 0 80px rgba(54, 231, 255, 0.5), 0 20px 60px rgba(0, 0, 0, 0.6)"
         }}
         priority
       />

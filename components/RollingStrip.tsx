@@ -19,12 +19,17 @@ export default function RollingStrip({ strip }: RollingStripProps) {
 
   if (reducedMotion) {
     return (
-      <div className="py-8 bg-subtle">
-        <div className="container mx-auto px-6 flex justify-center gap-8">
-          {shuffled.map((text, i) => (
-            <span key={i} className="text-accent font-display font-bold text-lg">
-              {text}
-            </span>
+      <div className="py-8 overflow-hidden bg-subtle">
+        <div className={`flex gap-12 ${reducedMotion ? "" : "animate-marquee"}`}>
+          {[...Array(10)].map((_, i) => (
+            <div key={i} className="flex items-center gap-12">
+              {shuffled.map((text, j) => (
+                <span key={j} className="text-accent font-display font-bold text-lg whitespace-nowrap">
+                  {text}
+                </span>
+              ))}
+              <span className="text-accent/40">•</span>
+            </div>
           ))}
         </div>
       </div>
