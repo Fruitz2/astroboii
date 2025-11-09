@@ -2,13 +2,15 @@
 
 import Link from "next/link";
 import Image from "next/image";
-import { getStrings, getLinks } from "@/lib/content-loader";
 import { ExternalLink, Twitter, Send } from "lucide-react";
 
-const strings = getStrings();
-const links = getLinks();
+// Import at build time via props instead
+interface HeaderProps {
+  strings: any;
+  links: any;
+}
 
-export default function Header() {
+export default function Header({ strings, links }: HeaderProps) {
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-bg/80 backdrop-blur-md border-b neon-border">
       <nav className="container mx-auto px-6 py-4 flex items-center justify-between">

@@ -1,13 +1,15 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { getStrings, getLinks } from "@/lib/content-loader";
 import { ExternalLink } from "lucide-react";
 
-const strings = getStrings();
-const links = getLinks();
+interface StickySideBuyProps {
+  buyLabel: string;
+  buyEnabled: boolean;
+  pumpLink: string;
+}
 
-export default function StickySideBuy() {
+export default function StickySideBuy({ buyLabel, buyEnabled, pumpLink }: StickySideBuyProps) {
   const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
@@ -20,7 +22,7 @@ export default function StickySideBuy() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  if (!strings.buyEnabled || !links.pump) return null;
+  if (!buyEnabled || !pumpLink) return null;
 
   return (
     <div
@@ -29,15 +31,15 @@ export default function StickySideBuy() {
       }`}
     >
       <a
-        href={links.pump}
+        href={pumpLink}
         target="_blank"
         rel="noopener noreferrer"
         className="flex flex-col items-center gap-2 px-4 py-6 bg-gradient-to-b from-accent to-accent-2 text-bg font-bold rounded-xl hover:scale-105 transition-transform shadow-lg"
         style={{ writingMode: "vertical-rl" }}
-        aria-label={strings.hero.buyCta}
+        aria-label={buyLabel}
       >
         <ExternalLink size={20} />
-        <span className="text-sm tracking-wider">{strings.menu.buy.toUpperCase()}</span>
+        <span className="text-sm tracking-wider">{buyLabel.toUpperCase()}</span>
       </a>
     </div>
   );

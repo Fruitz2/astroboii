@@ -1,10 +1,10 @@
 "use client";
 
-import { getStrings } from "@/lib/content-loader";
+interface FooterProps {
+  strings: any;
+}
 
-const strings = getStrings();
-
-export default function Footer() {
+export default function Footer({ strings }: FooterProps) {
   return (
     <footer className="py-12 px-6 bg-subtle border-t neon-border">
       <div className="container mx-auto max-w-4xl text-center space-y-4">

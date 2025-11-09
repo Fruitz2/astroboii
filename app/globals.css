@@ -58,11 +58,17 @@
   }
 
   .prose-custom {
-    @apply max-w-prose text-fg/90 leading-relaxed;
+    @apply max-w-prose leading-relaxed;
+    color: rgb(249 246 240 / 0.9);
   }
 
   .prose-custom a {
-    @apply text-accent underline decoration-accent/50 hover:decoration-accent transition-colors;
+    @apply text-accent underline hover:decoration-accent transition-colors;
+    text-decoration-color: rgb(54 231 255 / 0.5);
+  }
+
+  .prose-custom a:hover {
+    text-decoration-color: rgb(54 231 255 / 1);
   }
 }
 

@@ -16,16 +16,18 @@ import { getStrings, getLinks } from "@/lib/content-loader";
 import { ExternalLink } from "lucide-react";
 import Image from "next/image";
 
-const strings = getStrings();
-const links = getLinks();
-
 export default function HomePage() {
+  const strings = getStrings();
+  const links = getLinks();
   return (
     <>
       <BoostBar />
       <AmbientWordmark />
-      <Header />
-      <UrgencyRibbon />
+      <Header strings={strings} links={links} />
+      <UrgencyRibbon 
+        showUrgencyRibbon={strings.showUrgencyRibbon} 
+        urgencyMessages={strings.urgencyMessages} 
+      />
       
       <main id="main-content" className="relative pt-20">
         {/* Hero Section */}
@@ -46,7 +48,7 @@ export default function HomePage() {
               />
             </div>
 
-            <KineticType />
+            <KineticType h1Variants={strings.hero.h1Variants} />
 
             <p className="text-xl md:text-2xl text-fg/80 max-w-2xl mx-auto leading-relaxed">
               {strings.hero.sub}
@@ -84,17 +86,35 @@ export default function HomePage() {
           </div>
         </section>
 
-        <ReasonRow />
-        <RollingStrip />
-        <NarrativeBurst />
-        <BullishMenu />
-        <CommunityBoard />
-        <RoadmapPreview />
+        <ReasonRow reasons={strings.reasons} />
+        <RollingStrip strip={strings.strip} />
+        <NarrativeBurst narrativeBurst={strings.narrativeBurst} />
+        <BullishMenu 
+          bullishMenu={strings.bullishMenu} 
+          buyCta={strings.hero.buyCta} 
+          buyEnabled={strings.buyEnabled} 
+          pumpLink={links.pump} 
+        />
+        <CommunityBoard community={strings.community} tgLink={links.tg} />
+        <RoadmapPreview 
+          roadmapPreview={strings.roadmapPreview} 
+          buyCta={strings.hero.buyCta} 
+          buyEnabled={strings.buyEnabled} 
+          pumpLink={links.pump} 
+        />
       </main>
 
-      <Footer />
-      <MobileBuyDock />
-      <StickySideBuy />
+      <Footer strings={strings} />
+      <MobileBuyDock 
+        buyCta={strings.hero.buyCta} 
+        buyEnabled={strings.buyEnabled} 
+        pumpLink={links.pump} 
+      />
+      <StickySideBuy 
+        buyLabel={strings.menu.buy} 
+        buyEnabled={strings.buyEnabled} 
+        pumpLink={links.pump} 
+      />
     </>
   );
 }

@@ -1,20 +1,21 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { getStrings } from "@/lib/content-loader";
 import { prefersReducedMotion } from "@/lib/a11y";
 
-const strings = getStrings();
+interface RollingStripProps {
+  strip: string[];
+}
 
-export default function RollingStrip() {
+export default function RollingStrip({ strip }: RollingStripProps) {
   const [reducedMotion, setReducedMotion] = useState(false);
   const [shuffled, setShuffled] = useState<string[]>([]);
 
   useEffect(() => {
     setReducedMotion(prefersReducedMotion());
-    const items = [...strings.strip].sort(() => Math.random() - 0.5).slice(0, 3);
+    const items = [...strip].sort(() => Math.random() - 0.5).slice(0, 3);
     setShuffled(items);
-  }, []);
+  }, [strip]);
 
   if (reducedMotion) {
     return (

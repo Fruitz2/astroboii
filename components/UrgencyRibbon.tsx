@@ -1,12 +1,14 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { getStrings } from "@/lib/content-loader";
 import { prefersReducedMotion } from "@/lib/a11y";
 
-const strings = getStrings();
+interface UrgencyRibbonProps {
+  showUrgencyRibbon: boolean;
+  urgencyMessages: string[];
+}
 
-export default function UrgencyRibbon() {
+export default function UrgencyRibbon({ showUrgencyRibbon, urgencyMessages }: UrgencyRibbonProps) {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [reducedMotion, setReducedMotion] = useState(false);
 
@@ -15,16 +17,16 @@ export default function UrgencyRibbon() {
   }, []);
 
   useEffect(() => {
-    if (!strings.showUrgencyRibbon) return;
+    if (!showUrgencyRibbon) return;
 
     const interval = setInterval(() => {
-      setCurrentIndex((prev) => (prev + 1) % strings.urgencyMessages.length);
+      setCurrentIndex((prev) => (prev + 1) % urgencyMessages.length);
     }, 12000);
 
     return () => clearInterval(interval);
   }, []);
 
-  if (!strings.showUrgencyRibbon) return null;
+  if (!showUrgencyRibbon) return null;
 
   return (
     <div className="bg-gradient-to-r from-accent/20 to-accent-2/20 border-b neon-border py-2">
@@ -35,7 +37,7 @@ export default function UrgencyRibbon() {
           }`}
           key={currentIndex}
         >
-          {strings.urgencyMessages[currentIndex]}
+          {urgencyMessages[currentIndex]}
         </p>
       </div>
     </div>

@@ -1,18 +1,21 @@
 "use client";
 
-import { getStrings } from "@/lib/content-loader";
+interface ReasonRowProps {
+  reasons: {
+    title: string;
+    items: Array<{ h: string; p: string }>;
+  };
+}
 
-const strings = getStrings();
-
-export default function ReasonRow() {
+export default function ReasonRow({ reasons }: ReasonRowProps) {
   return (
     <section className="py-20 px-6">
       <div className="container mx-auto max-w-6xl">
         <h2 className="text-4xl md:text-5xl font-black text-center mb-12 text-gradient">
-          {strings.reasons.title}
+          {reasons.title}
         </h2>
         <div className="grid md:grid-cols-3 gap-6">
-          {strings.reasons.items.map((item, i) => (
+          {reasons.items.map((item, i) => (
             <div
               key={i}
               className="relative group p-8 rounded-xl neon-border bg-subtle/50 hover:bg-subtle transition-all hover:scale-105 duration-300 glow"

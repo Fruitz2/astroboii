@@ -3,12 +3,13 @@
 import { useEffect, useState } from "react";
 import { useSearchParams } from "next/navigation";
 import { getVariant } from "@/lib/ab";
-import { getStrings } from "@/lib/content-loader";
 import { prefersReducedMotion } from "@/lib/a11y";
 
-const strings = getStrings();
+interface KineticTypeProps {
+  h1Variants: string[][];
+}
 
-export default function KineticType() {
+export default function KineticType({ h1Variants }: KineticTypeProps) {
   const searchParams = useSearchParams();
   const [variant, setVariant] = useState<string[]>([]);
   const [reducedMotion, setReducedMotion] = useState(false);
@@ -16,9 +17,9 @@ export default function KineticType() {
   useEffect(() => {
     setReducedMotion(prefersReducedMotion());
     const variantParam = searchParams.get("variant");
-    const selected = getVariant(strings.hero.h1Variants, variantParam);
+    const selected = getVariant(h1Variants, variantParam);
     setVariant(selected);
-  }, [searchParams]);
+  }, [searchParams, h1Variants]);
 
   if (variant.length === 0) return null;
 
