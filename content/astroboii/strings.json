@@ -14,8 +14,8 @@
     "home": "Home",
     "lore": "Lore",
     "token": "Token",
-    "roadmap": "Roadmap",
-    "press": "Press Kit",
+    "roadmap": "Zoommap",
+    "whitepaper": "Whitepaper",
     "buy": "Buy",
     "x": "X",
     "tg": "TG"
@@ -32,20 +32,11 @@
     "secondaryCtas": ["Join Orbit", "Follow Boii"]
   },
   "reasons": {
-    "title": "THREE QUICK REASONS",
+    "title": "Why Send It?",
     "items": [
-      {
-        "h": "Pure Signal",
-        "p": "No buzzwords, no stock photos. Just attitude and type."
-      },
-      {
-        "h": "Frictionless Launch",
-        "p": "Fair on Pump.fun, 0% tax. Press buy or don't. We're sending either way."
-      },
-      {
-        "h": "Culture Engine",
-        "p": "Memes move markets. We move memes."
-      }
+      { "h": "Zero Promises", "p": "No roadmap to the moon. Already floating in space. This is the utility." },
+      { "h": "Community Vibes", "p": "Just degens posting astronaut memes and typing 'send it' repeatedly." },
+      { "h": "Fair Launch", "p": "No presale. No team tokens. Just Pump.fun and pure chaos." }
     ]
   },
   "strip": [

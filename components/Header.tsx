@@ -21,23 +21,23 @@ export default function Header({ strings, links }: HeaderProps) {
         </Link>
 
         {/* Center Menu */}
-        <div className="hidden md:flex items-center gap-8">
-          <Link href="/" className="text-fg/80 hover:text-accent transition-colors">
+        <nav className="hidden md:flex items-center gap-8">
+          <Link href="/" className="hover:text-accent transition-colors">
             {strings.menu.home}
           </Link>
-          <Link href="/lore" className="text-fg/80 hover:text-accent transition-colors">
+          <Link href="/lore" className="hover:text-accent transition-colors">
             {strings.menu.lore}
           </Link>
-          <Link href="/token" className="text-fg/80 hover:text-accent transition-colors">
+          <Link href="/token" className="hover:text-accent transition-colors">
             {strings.menu.token}
           </Link>
-          <Link href="/roadmap" className="text-fg/80 hover:text-accent transition-colors">
+          <Link href="/roadmap" className="hover:text-accent transition-colors">
             {strings.menu.roadmap}
           </Link>
-          <Link href="/press" className="text-fg/80 hover:text-accent transition-colors">
-            {strings.menu.press}
+          <Link href="/whitepaper" className="hover:text-accent transition-colors">
+            {strings.menu.whitepaper}
           </Link>
-        </div>
+        </nav>
 
         {/* Right CTAs */}
         <div className="flex items-center gap-4">

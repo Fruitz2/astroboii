@@ -29,11 +29,8 @@ export const metadata: Metadata = {
   creator: "Astro Boii",
   metadataBase: new URL("https://astroboii.xyz"),
   openGraph: {
-    title: "Astro Boii | send it, boii.",
-    description: "Letters over pictures. Motion over noise. The hyperactive astronaut memecoin on Solana.",
     title: "Astro Boii — send it, boii.",
-    description:
-      "Logo-only, kinetic, ridiculous—but clean. Hyperactive astronaut energy, zero cringe, professional craft. 3… 2… SEND.",
+    description: "The hyperactive astronaut memecoin on Solana. No gravity, only send. 3… 2… SEND.",
     url: "https://astroboii.xyz",
     siteName: "Astro Boii",
     locale: "en_US",
