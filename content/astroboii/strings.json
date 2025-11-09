@@ -65,17 +65,16 @@
     "body": "That's where everyone hangs out. Come post memes and pretend you know what you're doing."
   },
   "roadmapPreview": {
-    "title": "What's Next",
+    "title": "Roadmap",
     "bullets": [
-      "✓ Launch complete",
-      "→ Growing community",
-      "→ Exchange listings",
-      "→ Whatever happens"
+      "✓ Fair launch on Pump.fun",
+      "→ Build community to 1,000 holders", 
+      "→ CoinGecko & CMC listings",
+      "→ Community decides the future"
     ]
   },
   "footer": {
-    "legal": "Pure meme. Not investment advice. Some regions may be restricted.",
-    "region": "Heads-up: access to third-party platforms may vary by country."
+    "legal": "Not investment advice. This is a memecoin."
   },
   "toggleTips": {
     "reduceMotionOn": "Motion trimmed. Oxygen saved.",

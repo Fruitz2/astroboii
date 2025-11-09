@@ -22,8 +22,8 @@ const jetbrainsMono = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Astro Boii",
-  description: "Just an astronaut floating through Solana. Fair launch memecoin on Pump.fun.",
+  title: "Astro Boii | Solana Memecoin",
+  description: "The astronaut memecoin on Solana. Fair launch on Pump.fun. No promises, just vibes.",
   keywords: "Astro Boii, memecoin, Solana, crypto, astronaut, send it, zoomies",
   authors: [{ name: "Astro Boii Team" }],
   creator: "Astro Boii",

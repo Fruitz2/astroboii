@@ -1,35 +1,43 @@
-# Zoommap™ 
+# Roadmap
 
-## Phase 1: Launch (Complete ✓)
-- Token deployed on Pump.fun
-- Telegram group created
-- First 100 holders achieved
-- Initial liquidity established
-- Contract verified and renounced
+## Q4 2024
 
-## Phase 2: Community Building (Current)
-- **Week 1-2:** Organic growth to 500 holders
-- **Week 3-4:** Community meme competitions with SOL prizes
-- **Month 2:** Partner with Solana meme pages
-- **Ongoing:** Daily Twitter raids and engagement campaigns
+### Launch & Foundation
+- ✅ **Token Creation** - Fair launch on Pump.fun
+- ✅ **Community Setup** - Telegram and Twitter created
+- ✅ **Website Launch** - astroboii.xyz live
+- 🔄 **Initial Marketing** - Organic growth campaign
 
-## Phase 3: Market Presence
-- **CoinGecko Listing:** Application submitted at 1,000 holders
-- **CMC Listing:** Application at 2,500 holders
-- **Dexscreener Boost:** Community funded trending
-- **Birdeye Verification:** Complete profile and socials
-- **Jupiter Strict List:** Apply when volume stable
+### Community Building
+- 🔄 **100 Holders** - First milestone
+- ⏳ **500 Holders** - Community competitions
+- ⏳ **1,000 Holders** - Apply for CoinGecko
 
-## Phase 4: Expansion
-- **5,000 Holders:** Launch community DAO for decisions
-- **10,000 Holders:** Explore CEX listings (Gate.io, MEXC)
-- **Major Milestone:** Raydium pool migration
-- **Long Term:** Whatever the community decides
+## Q1 2025
 
-## Current Focus
-- Growing Telegram to 1,000 members
-- Daily meme creation
-- Twitter engagement campaigns
-- Building genuine community
+### Growth Phase
+- **Dexscreener Verification** - Complete profile
+- **CoinMarketCap Listing** - Submit application
+- **Community Events** - Weekly meme contests
+- **Influencer Partnerships** - Solana KOLs
 
-*No promises on timeline. This is community driven.*
+### Expansion
+- **2,500 Holders** - Community DAO launch
+- **Birdeye Integration** - Full analytics
+- **Jupiter Strict List** - Apply for inclusion
+
+## Q2 2025 & Beyond
+
+### Market Presence
+- **5,000 Holders** - CEX discussions
+- **Strategic Partnerships** - Other meme projects
+- **Community Treasury** - If community votes yes
+- **Long Term** - Community decides direction
+
+## Key Milestones
+- 🎯 **100 holders** - Foundation complete
+- 🎯 **1,000 holders** - Major listings
+- 🎯 **5,000 holders** - CEX potential
+- 🎯 **10,000 holders** - Top Solana meme
+
+*Timeline subject to market conditions. No promises.*
