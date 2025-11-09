@@ -11,7 +11,7 @@ export default function Footer({ strings }: FooterProps) {
         <p className="text-fg/60 text-sm">{strings.footer.legal}</p>
         <p className="text-fg/40 text-xs">{strings.footer.region}</p>
         <p className="text-fg/30 text-xs mt-6">
-          © {new Date().getFullYear()} Astro Boii. Built with zoomies.
+          © {new Date().getFullYear()} Astro Boii
         </p>
       </div>
     </footer>

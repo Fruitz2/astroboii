@@ -60,9 +60,12 @@ export default function HomePage() {
                   href={links.pump}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="btn-primary-buy flex items-center gap-2 text-lg"
+                  className="px-10 py-5 bg-gradient-to-r from-accent via-accent-2 to-accent text-bg font-black rounded-2xl hover:scale-110 transition-all duration-300 flex items-center gap-3 text-xl shadow-2xl transform hover:rotate-1"
+                  style={{
+                    boxShadow: "0 20px 60px rgba(54, 231, 255, 0.5), 0 0 120px rgba(255, 240, 179, 0.3)"
+                  }}
                 >
-                  <ExternalLink size={20} />
+                  <ExternalLink size={24} />
                   {strings.hero.buyCta}
                 </a>
               )}
@@ -70,7 +73,7 @@ export default function HomePage() {
                 href={links.tg}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="btn-secondary text-accent font-bold text-lg"
+                className="px-10 py-5 border-2 border-accent rounded-2xl hover:bg-accent/10 transition-all duration-300 text-accent font-bold text-xl backdrop-blur-sm"
               >
                 {strings.hero.secondaryCtas[0]}
               </a>
@@ -78,7 +81,7 @@ export default function HomePage() {
                 href={links.x}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="btn-secondary text-accent font-bold text-lg"
+                className="px-10 py-5 border-2 border-accent-2 rounded-2xl hover:bg-accent-2/10 transition-all duration-300 text-accent-2 font-bold text-xl backdrop-blur-sm"
               >
                 {strings.hero.secondaryCtas[1]}
               </a>
