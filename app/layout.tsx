@@ -22,15 +22,15 @@ const jetbrainsMono = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Astro Boii | send it, boii.",
-  description: "Letters over pictures. Motion over noise. Confidence over cope. No gravity, only send. The hyperactive astronaut memecoin on Solana.",
+  title: "Astro Boii",
+  description: "Just an astronaut floating through Solana. Fair launch memecoin on Pump.fun.",
   keywords: "Astro Boii, memecoin, Solana, crypto, astronaut, send it, zoomies",
   authors: [{ name: "Astro Boii Team" }],
   creator: "Astro Boii",
   metadataBase: new URL("https://astroboii.xyz"),
   openGraph: {
-    title: "Astro Boii — send it, boii.",
-    description: "The hyperactive astronaut memecoin on Solana. No gravity, only send. 3… 2… SEND.",
+    title: "Astro Boii",
+    description: "Just an astronaut floating through Solana. Fair launch memecoin.",
     url: "https://astroboii.xyz",
     siteName: "Astro Boii",
     locale: "en_US",

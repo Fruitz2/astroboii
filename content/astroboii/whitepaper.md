@@ -1,16 +1,16 @@
-# Astro Boii Whitepaper v0.1
+# Astro Boii Whitepaper
 
 ## Abstract
-Astro Boii is a memecoin. That's it. That's the abstract.
+It's a memecoin with an astronaut theme. Not that deep.
 
 ## Introduction
-Some dev sneezed while looking at astronaut pictures. Now we're here.
+Someone made this. People bought it. Here we are.
 
 ## Technology
-- **Blockchain:** Solana (fast and cheap, like instant ramen)
-- **Contract:** Whatever Pump.fun generates
-- **Innovation:** Literally none
-- **Security:** Don't send your seed phrase to anyone
+- **Blockchain:** Solana
+- **Contract:** Standard SPL token
+- **Innovation:** None
+- **Security:** DYOR
 
 ## Tokenomics
 - **Total Supply:** 1 billion ASTRO
@@ -22,11 +22,11 @@ Some dev sneezed while looking at astronaut pictures. Now we're here.
 - **Rug Potential:** No (liquidity locked)
 
 ## Use Cases
-1. Sending it
-2. Holding it
-3. Posting "send it, boii" in Telegram
-4. Making astronaut memes
-5. Vibing
+1. Trading
+2. Holding
+3. Making memes
+4. Community stuff
+5. That's it
 
 ## Roadmap
 See Zoommap. Spoiler: It's mostly vibes.
@@ -40,10 +40,8 @@ This is not financial advice. This is barely even a whitepaper. Astro Boii is a 
 If you're reading this for investment advice, please close your laptop and go touch grass.
 
 ## Conclusion
-3… 2… SEND.
+It's a memecoin. Make your own decisions.
 
 ---
 
-*Last updated: Whenever*
-*Version: Whatever*
-*Seriousness level: 0/10*
+*Not financial advice*

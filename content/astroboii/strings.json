@@ -27,42 +27,42 @@
       ["zoom it", "vibe it"],
       ["no gravity", "only send"]
     ],
-    "sub": "Letters over pictures. Motion over noise. Confidence over cope.",
+    "sub": "Just an astronaut with too much energy. Launched fair on Pump.fun.",
     "buyCta": "Buy on Pump.fun",
     "secondaryCtas": ["Join Orbit", "Follow Boii"]
   },
   "reasons": {
-    "title": "Why Send It?",
+    "title": "The Basics",
     "items": [
-      { "h": "Zero Promises", "p": "No roadmap to the moon. Already floating in space. This is the utility." },
-      { "h": "Community Vibes", "p": "Just degens posting astronaut memes and typing 'send it' repeatedly." },
-      { "h": "Fair Launch", "p": "No presale. No team tokens. Just Pump.fun and pure chaos." }
+      { "h": "Fair Launch", "p": "No presale BS. No team tokens. Everyone gets in the same way." },
+      { "h": "Community Owned", "p": "No devs dumping on you. Contract renounced. It's yours now." },
+      { "h": "Just Vibes", "p": "We post memes. We say 'send it.' That's literally it." }
     ]
   },
   "strip": [
-    "Zoomies > roadmaps.",
-    "To the memes.",
-    "No gravity, only send.",
-    "Knees weak, charts steady.",
-    "3… 2… SEND."
+    "send it",
+    "astronaut stuff",
+    "probably nothing",
+    "floating around",
+    "just vibes"
   ],
   "narrativeBurst": {
-    "title": "Boii's Birth",
-    "body": "LEO router sneezed mid-pump. Zero-G coffee hit dopamine packets. A helmet gremlin crawled out of the Wi-Fi and yelled SEND IT. He never stopped."
+    "title": "Origin Story",
+    "body": "Some guy made an astronaut meme. People liked it. Now we're here. That's the whole story."
   },
   "bullishMenu": {
-    "title": "THE VIBE PANEL",
+    "title": "Token Info",
     "items": [
-      "Fair Launch • Pump.fun propulsion",
-      "0% Tax — vibes don't tax",
-      "0% Treasury — pure meme, pure send",
-      "LP & fees per Pump.fun docs (currently 0.015 SOL on graduation)"
+      "Supply: 1 Billion",
+      "Tax: None",
+      "Launch: Pump.fun",
+      "Team: Zero tokens"
     ],
-    "disclaimer": "High risk, high zoomies. Hydrate before takeoff."
+    "disclaimer": "This is a memecoin. Act accordingly."
   },
   "community": {
-    "title": "Boii Board",
-    "body": "Post loops with #AstroBoii. Best text-meme gets the homepage spotlight for 24 hours. Letters only. Be loud."
+    "title": "Join The Telegram",
+    "body": "That's where everyone hangs out. Come post memes and pretend you know what you're doing."
   },
   "roadmapPreview": {
     "title": "ZOOMMAP",
