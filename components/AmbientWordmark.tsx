@@ -10,15 +10,19 @@ export default function AmbientWordmark() {
     setReducedMotion(prefersReducedMotion());
   }, []);
 
+  // Disable entirely on reduced motion
+  if (reducedMotion) return null;
+
   return (
     <div className="fixed inset-0 overflow-hidden pointer-events-none z-0">
       <div
-        className={`absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-[20vw] font-black text-accent/5 select-none whitespace-nowrap ${
-          reducedMotion ? "" : "animate-pulse-slow"
-        }`}
+        className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-[20vw] font-black select-none whitespace-nowrap animate-pulse-slow"
         style={{
-          WebkitTextStroke: "2px rgba(54, 231, 255, 0.1)",
+          WebkitTextStroke: "2px rgba(54, 231, 255, 0.08)",
           paintOrder: "stroke fill",
+          color: "rgba(54, 231, 255, 0.06)",
+          maskImage: "radial-gradient(circle at center, transparent 20%, black 60%)",
+          WebkitMaskImage: "radial-gradient(circle at center, transparent 20%, black 60%)",
         } as React.CSSProperties}
       >
         ASTRO BOII

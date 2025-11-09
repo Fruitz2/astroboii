@@ -13,9 +13,9 @@ import StickySideBuy from "@/components/StickySideBuy";
 import BoostBar from "@/components/BoostBar";
 import AmbientWordmark from "@/components/AmbientWordmark";
 import UrgencyRibbon from "@/components/UrgencyRibbon";
+import HeroLogoFloat from "@/components/HeroLogoFloat";
 import { getStrings, getLinks } from "@/lib/content-loader";
 import { ExternalLink } from "lucide-react";
-import Image from "next/image";
 
 export default function HomePage() {
   const strings = getStrings();
@@ -38,16 +38,7 @@ export default function HomePage() {
               {strings.hero.eyebrow}
             </p>
             
-            <div className="mb-8">
-              <Image
-                src="/logo.png"
-                alt="Astro Boii"
-                width={200}
-                height={200}
-                className="mx-auto rounded-2xl glow"
-                priority
-              />
-            </div>
+            <HeroLogoFloat />
 
             <Suspense fallback={
               <h1 className="text-6xl md:text-8xl lg:text-9xl font-black text-center leading-tight">
@@ -69,7 +60,7 @@ export default function HomePage() {
                   href={links.pump}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="px-8 py-4 bg-gradient-to-r from-accent to-accent-2 text-bg font-bold rounded-xl hover:scale-105 transition-transform flex items-center gap-2 text-lg"
+                  className="btn-primary-buy flex items-center gap-2 text-lg"
                 >
                   <ExternalLink size={20} />
                   {strings.hero.buyCta}
@@ -79,7 +70,7 @@ export default function HomePage() {
                 href={links.tg}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="px-8 py-4 neon-border rounded-xl hover:bg-subtle transition-colors text-accent font-bold text-lg"
+                className="btn-secondary text-accent font-bold text-lg"
               >
                 {strings.hero.secondaryCtas[0]}
               </a>
@@ -87,7 +78,7 @@ export default function HomePage() {
                 href={links.x}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="px-8 py-4 neon-border rounded-xl hover:bg-subtle transition-colors text-accent font-bold text-lg"
+                className="btn-secondary text-accent font-bold text-lg"
               >
                 {strings.hero.secondaryCtas[1]}
               </a>
@@ -95,22 +86,39 @@ export default function HomePage() {
           </div>
         </section>
 
+        <div className="orbital-separator" />
         <ReasonRow reasons={strings.reasons} />
-        <RollingStrip strip={strings.strip} />
-        <NarrativeBurst narrativeBurst={strings.narrativeBurst} />
-        <BullishMenu 
-          bullishMenu={strings.bullishMenu} 
-          buyCta={strings.hero.buyCta} 
-          buyEnabled={strings.buyEnabled} 
-          pumpLink={links.pump} 
+        <div className="orbital-separator" />
+        <div className="section-even">
+          <RollingStrip strip={strings.strip} />
+        </div>
+        <div className="orbital-separator" />
+        <NarrativeBurst 
+          narrativeBurst={strings.narrativeBurst}
+          buyCta={strings.hero.buyCta}
+          buyEnabled={strings.buyEnabled}
+          pumpLink={links.pump}
         />
+        <div className="orbital-separator" />
+        <div className="section-even">
+          <BullishMenu 
+            bullishMenu={strings.bullishMenu} 
+            buyCta={strings.hero.buyCta} 
+            buyEnabled={strings.buyEnabled} 
+            pumpLink={links.pump} 
+          />
+        </div>
+        <div className="orbital-separator" />
         <CommunityBoard community={strings.community} tgLink={links.tg} />
-        <RoadmapPreview 
+        <div className="orbital-separator" />
+        <div className="section-even">
+          <RoadmapPreview 
           roadmapPreview={strings.roadmapPreview} 
           buyCta={strings.hero.buyCta} 
           buyEnabled={strings.buyEnabled} 
           pumpLink={links.pump} 
         />
+        </div>
       </main>
 
       <Footer strings={strings} />

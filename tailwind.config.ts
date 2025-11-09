@@ -28,10 +28,11 @@ const config: Config = {
         glow: "var(--shadow-glow)",
       },
       animation: {
-        "pulse-slow": "pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite",
+        "pulse-slow": "pulse 8s cubic-bezier(0.4, 0, 0.6, 1) infinite",
         marquee: "marquee 30s linear infinite",
         "fade-in": "fadeIn 0.5s ease-in-out",
         jitter: "jitter 0.3s ease-in-out",
+        float: "float 12s ease-in-out infinite",
       },
       keyframes: {
         marquee: {
@@ -43,9 +44,14 @@ const config: Config = {
           "100%": { opacity: "1", transform: "translateY(0)" },
         },
         jitter: {
-          "0%, 100%": { transform: "translateX(0)" },
-          "25%": { transform: "translateX(-2px)" },
-          "75%": { transform: "translateX(2px)" },
+          "0%, 100%": { transform: "translateX(0) translateY(0)" },
+          "25%": { transform: "translateX(-2px) translateY(-2px)" },
+          "50%": { transform: "translateX(2px) translateY(2px)" },
+          "75%": { transform: "translateX(-1px) translateY(1px)" },
+        },
+        float: {
+          "0%, 100%": { transform: "translateY(0px)" },
+          "50%": { transform: "translateY(-4px)" },
         },
       },
     },

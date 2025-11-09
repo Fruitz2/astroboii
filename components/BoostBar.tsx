@@ -27,10 +27,13 @@ export default function BoostBar() {
   if (reducedMotion) return null;
 
   return (
-    <div className="fixed top-0 left-0 right-0 h-1 bg-subtle z-50">
+    <div className="fixed top-0 left-0 right-0 z-50 h-1">
       <div
-        className="h-full bg-gradient-to-r from-accent to-accent-2 transition-all duration-150"
-        style={{ width: `${scrollProgress}%` }}
+        className="h-full bg-gradient-to-r from-accent to-accent-2 transition-all duration-100"
+        style={{ 
+          width: `${scrollProgress}%`,
+          boxShadow: '0 0 10px rgba(54, 231, 255, 0.6), 0 0 20px rgba(54, 231, 255, 0.4)'
+        }}
       />
     </div>
   );

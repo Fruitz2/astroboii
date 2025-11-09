@@ -21,6 +21,13 @@
 
   body {
     @apply bg-bg text-fg font-body antialiased;
+    background-image: 
+      radial-gradient(circle at 20% 30%, rgba(54, 231, 255, 0.03) 0%, transparent 2%),
+      radial-gradient(circle at 80% 60%, rgba(255, 240, 179, 0.02) 0%, transparent 1.5%),
+      radial-gradient(circle at 40% 80%, rgba(129, 213, 255, 0.025) 0%, transparent 1.8%),
+      radial-gradient(circle at 70% 20%, rgba(54, 231, 255, 0.02) 0%, transparent 1.2%);
+    background-size: 800px 800px, 600px 600px, 900px 900px, 700px 700px;
+    background-position: 0 0, 100px 200px, 300px 50px, 500px 400px;
   }
 
   h1,
@@ -70,6 +77,51 @@
   .prose-custom a:hover {
     text-decoration-color: rgb(54 231 255 / 1);
   }
+
+  /* Section alternating backgrounds */
+  .section-even {
+    background-color: #0F141B;
+  }
+
+  /* Orbital separator */
+  .orbital-separator {
+    height: 1px;
+    background: linear-gradient(90deg, transparent 0%, rgba(54, 231, 255, 0.4) 50%, transparent 100%);
+    margin: 0 auto;
+    max-width: 80%;
+  }
+
+  /* Enhanced button styles */
+  .btn-primary-buy {
+    @apply px-8 py-4 bg-gradient-to-r from-accent to-accent-2 text-bg font-bold rounded-xl transition-all duration-300;
+    box-shadow: 0 0 20px rgba(54, 231, 255, 0.3);
+  }
+
+  .btn-primary-buy:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 0 30px rgba(54, 231, 255, 0.5), 0 4px 12px rgba(0, 0, 0, 0.3);
+  }
+
+  .btn-secondary {
+    @apply px-8 py-4 neon-border rounded-xl hover:bg-subtle transition-all duration-300;
+    box-shadow: 0 0 10px rgba(54, 231, 255, 0.15);
+  }
+
+  .btn-secondary:hover {
+    box-shadow: 0 0 20px rgba(54, 231, 255, 0.3);
+  }
+
+  /* Animations */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
 }
 
 /* Reduced motion */
@@ -80,5 +132,9 @@
     animation-duration: 0.01ms !important;
     animation-iteration-count: 1 !important;
     transition-duration: 0.01ms !important;
+  }
+
+  body {
+    background-image: none !important;
   }
 }
