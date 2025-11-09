@@ -32,13 +32,7 @@ export default function RoadmapPreview({ roadmapPreview, buyCta, buyEnabled, pum
             </div>
           ))}
         </div>
-        <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-          <Link
-            href="/roadmap"
-            className="px-6 py-3 neon-border rounded-lg hover:bg-bg transition-colors text-accent font-bold"
-          >
-            View Full Zoommap →
-          </Link>
+        <div className="flex justify-center">
           {buyEnabled && pumpLink && (
             <a
               href={pumpLink}

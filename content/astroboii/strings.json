@@ -74,7 +74,8 @@
     ]
   },
   "footer": {
-    "legal": "Not investment advice. This is a memecoin."
+    "legal": "Not investment advice. This is a memecoin.",
+    "region": ""
   },
   "toggleTips": {
     "reduceMotionOn": "Motion trimmed. Oxygen saved.",

@@ -33,6 +33,7 @@ const config: Config = {
         "fade-in": "fadeIn 0.5s ease-in-out",
         jitter: "jitter 0.3s ease-in-out",
         float: "float 12s ease-in-out infinite",
+        "float-particle": "float-particle 30s ease-in-out infinite",
       },
       keyframes: {
         marquee: {
@@ -52,6 +53,12 @@ const config: Config = {
         float: {
           "0%, 100%": { transform: "translateY(0px)" },
           "50%": { transform: "translateY(-4px)" },
+        },
+        "float-particle": {
+          "0%": { transform: "translateY(0) translateX(0)" },
+          "33%": { transform: "translateY(-30px) translateX(20px)" },
+          "66%": { transform: "translateY(20px) translateX(-20px)" },
+          "100%": { transform: "translateY(0) translateX(0)" },
         },
       },
     },

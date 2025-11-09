@@ -13,6 +13,7 @@ import StickySideBuy from "@/components/StickySideBuy";
 import BoostBar from "@/components/BoostBar";
 import AmbientWordmark from "@/components/AmbientWordmark";
 import UrgencyRibbon from "@/components/UrgencyRibbon";
+import ParticleBackground from "@/components/ParticleBackground";
 import HeroLogoFloat from "@/components/HeroLogoFloat";
 import { getStrings, getLinks } from "@/lib/content-loader";
 import { ExternalLink } from "lucide-react";
@@ -23,7 +24,7 @@ export default function HomePage() {
   return (
     <>
       <BoostBar />
-      <AmbientWordmark />
+      <ParticleBackground />
       <Header strings={strings} links={links} />
       <UrgencyRibbon 
         showUrgencyRibbon={strings.showUrgencyRibbon} 
