@@ -1,3 +1,4 @@
+import { Suspense } from "react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import KineticType from "@/components/KineticType";
@@ -48,7 +49,15 @@ export default function HomePage() {
               />
             </div>
 
-            <KineticType h1Variants={strings.hero.h1Variants} />
+            <Suspense fallback={
+              <h1 className="text-6xl md:text-8xl lg:text-9xl font-black text-center leading-tight">
+                {strings.hero.h1Variants[0].map((line, i) => (
+                  <span key={i} className="block text-gradient">{line}</span>
+                ))}
+              </h1>
+            }>
+              <KineticType h1Variants={strings.hero.h1Variants} />
+            </Suspense>
 
             <p className="text-xl md:text-2xl text-fg/80 max-w-2xl mx-auto leading-relaxed">
               {strings.hero.sub}
