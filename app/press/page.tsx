@@ -1,15 +1,16 @@
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-import { getPressKit, getLinks } from "@/lib/content-loader";
+import { getPressKit, getLinks, getStrings } from "@/lib/content-loader";
 import { Download, Copy } from "lucide-react";
 
 export default function PressPage() {
   const pressKit = getPressKit();
   const links = getLinks();
+  const strings = getStrings();
 
   return (
     <>
-      <Header />
+      <Header strings={strings} links={links} />
       <main className="min-h-screen pt-32 pb-20 px-6">
         <div className="container mx-auto max-w-4xl">
           <h1 className="text-6xl md:text-7xl font-black text-center mb-20 text-gradient">
@@ -76,7 +77,7 @@ export default function PressPage() {
           </div>
         </div>
       </main>
-      <Footer />
+      <Footer strings={strings} />
     </>
   );
 }

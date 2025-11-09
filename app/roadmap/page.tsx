@@ -1,13 +1,15 @@
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-import { getRoadmap } from "@/lib/content-loader";
+import { getRoadmap, getStrings, getLinks } from "@/lib/content-loader";
 
 export default function RoadmapPage() {
   const roadmap = getRoadmap();
+  const strings = getStrings();
+  const links = getLinks();
 
   return (
     <>
-      <Header />
+      <Header strings={strings} links={links} />
       <main className="min-h-screen pt-32 pb-20 px-6">
         <div className="container mx-auto max-w-4xl">
           <h1 className="text-6xl md:text-7xl font-black text-center mb-20 text-gradient">
@@ -27,7 +29,7 @@ export default function RoadmapPage() {
           </div>
         </div>
       </main>
-      <Footer />
+      <Footer strings={strings} />
     </>
   );
 }

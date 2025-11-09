@@ -1,9 +1,8 @@
-"use client";
-
 import { useEffect, useState } from "react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { prefersReducedMotion } from "@/lib/a11y";
+import { getStrings, getLinks } from "@/lib/content-loader";
 
 const acts = [
   {
@@ -29,6 +28,8 @@ const acts = [
 ];
 
 export default function LorePage() {
+  const strings = getStrings();
+  const links = getLinks();
   const [visibleActs, setVisibleActs] = useState<number[]>([]);
   const [reducedMotion, setReducedMotion] = useState(false);
 
@@ -49,7 +50,7 @@ export default function LorePage() {
 
   return (
     <>
-      <Header />
+      <Header strings={strings} links={links} />
       <main className="min-h-screen pt-32 pb-20 px-6">
         <div className="container mx-auto max-w-3xl">
           <h1 className="text-6xl md:text-7xl font-black text-center mb-20 text-gradient">
@@ -79,7 +80,7 @@ export default function LorePage() {
           </div>
         </div>
       </main>
-      <Footer />
+      <Footer strings={strings} />
     </>
   );
 }
