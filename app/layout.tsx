@@ -46,8 +46,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    site: "@astroboii",
-    creator: "@astroboii",
+    site: "@astroboipage",
+    creator: "@astroboipage",
     title: "Astro Boii — send it, boii.",
     description: "Hyperactive astronaut energy. 3… 2… SEND.",
     images: ["https://astroboii.xyz/logo.png"],

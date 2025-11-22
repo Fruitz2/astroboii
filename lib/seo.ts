@@ -22,8 +22,8 @@ export const defaultSEO = {
     ],
   },
   twitter: {
-    handle: "@astroboii",
-    site: "@astroboii",
+    handle: "@astroboipage",
+    site: "@astroboipage",
     cardType: "summary_large_image",
   },
 };
