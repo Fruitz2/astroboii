@@ -195,7 +195,7 @@ function Footer() {
           <div className="footer-brand">
             <img src="assets/astroboii-logo.png" alt="" />
             <h4>Astrobo<span className="accent">ii</span></h4>
-            <p>Astroboii did not come from space. Space came from astroboii. He posted first. You see it late.</p>
+            <p>Astroboii did not come from space. Space came from Astroboii. He posted first. You see it late.</p>
           </div>
           <div className="footer-col">
             <h5>Site</h5>
