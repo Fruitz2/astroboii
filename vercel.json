@@ -1,7 +1,4 @@
 {
-  "framework": "other",
-  "buildCommand": "",
-  "outputDirectory": "./",
   "cleanUrls": true,
   "trailingSlash": false,
   "headers": [
