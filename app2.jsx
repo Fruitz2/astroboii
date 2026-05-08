@@ -13,10 +13,10 @@ function SectionHead({ num, label, title, accent, right }) {
 
 function Lore() {
   const items = [
-    { n: '01', t: 'Helmet stays on', m: 'Always — orbit 04.221' },
-    { n: '02', t: 'Compass is decorative', m: 'Broken since launch' },
-    { n: '03', t: <>Wrong planet, <span className="accent">right chain</span></>, m: 'Solana / orbit 04.231' },
-    { n: '04', t: 'This is not a roadmap', m: 'It is a flight log' },
+    { n: '01', t: 'A tiny astronaut', m: 'Lost in space' },
+    { n: '02', t: 'A broken compass', m: 'Points nowhere' },
+    { n: '03', t: 'A shitty chart', m: 'Goes up and down' },
+    { n: '04', t: 'That is basically', m: 'The whole thing' },
   ];
   return (
     <section id="lore" className="section">
@@ -55,7 +55,7 @@ function Token() {
             <div className="row"><span className="k">Liquidity</span><span className="v">Burned</span><span className="tag">Permanent</span></div>
             <div className="contract">
               <span className="label">CA</span>
-              {ca ? <span className="ca">{ca}</span> : <span className="ca empty">— pending — paste here on launch —</span>}
+              {ca ? <span className="ca">{ca}</span> : <span className="ca empty">Will be updated soon</span>}
               <button onClick={copy} disabled={!ca} className={copied ? 'copied' : ''}>{copied ? <><Check/>Copied</> : <><CopyIc/>Copy</>}</button>
             </div>
           </div>
@@ -141,17 +141,6 @@ function Community() {
             </div>
             <button className="btn btn-primary btn-lg">Join Telegram <Arrow/></button>
           </div>
-          <div className="mc-card reveal">
-            <div className="head"><span>Mission Chatter</span><span className="live">Live</span></div>
-            <div className="mc-body">
-              {msgs.map((m,i)=>(
-                <div key={i} className="mc-msg">
-                  <span className="who">{m.who}</span>
-                  <span className="what">{m.what}</span>
-                </div>
-              ))}
-            </div>
-          </div>
         </div>
       </div>
     </section>
@@ -167,9 +156,9 @@ function Final({ isLaunched }) {
           <img src="assets/astroboii-logo.png" alt="" />
         </div>
         <h2 className="reveal">
-          <span className="l">The launchpad is</span>
-          <span className="l"><span className="accent">empty.</span></span>
-          <span className="l dim">Astroboii already left.</span>
+          <span className="l">Astroboii will</span>
+          <span className="l"><span className="accent">fucking</span></span>
+          <span className="l">send it.</span>
         </h2>
         <div className="final-ctas reveal">
           {isLaunched ? <a href={ASTRO_CONFIG.pumpFunUrl} target="_blank" rel="noopener noreferrer" className="btn btn-primary btn-lg">Send It Now<Arrow/></a> : <button className="btn btn-primary btn-lg">Launching soon<Arrow/></button>}

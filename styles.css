@@ -224,7 +224,7 @@ section { position: relative; z-index: 3; }
 .hero-title {
   font-family: var(--font-display);
   font-weight: 700;
-  font-size: clamp(72px, 13vw, 188px);
+  font-size: clamp(56px, 10vw, 140px);
   line-height: 0.84;
   letter-spacing: -0.05em;
   margin: 0 0 24px;
@@ -269,7 +269,7 @@ section { position: relative; z-index: 3; }
 }
 @media (max-width: 720px) { .hero-stat-row { grid-template-columns: repeat(2, 1fr); } }
 .hero-stat {
-  padding: 14px 14px 14px 0;
+  padding: 14px 12px 14px 8px;
   border-right: 1px solid var(--line);
 }
 .hero-stat:last-child { border-right: none; }
@@ -312,7 +312,7 @@ section { position: relative; z-index: 3; }
 }
 .hero-stage .logo {
   position: relative;
-  width: 78%;
+  width: 85%;
   aspect-ratio: 1;
   display: flex; align-items: center; justify-content: center;
   animation: float 7s ease-in-out infinite;
