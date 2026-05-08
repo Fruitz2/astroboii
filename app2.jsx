@@ -16,7 +16,7 @@ function Lore() {
     { n: '01', t: 'A tiny astronaut', m: '' },
     { n: '02', t: 'A broken compass', m: '' },
     { n: '03', t: 'A shitty chart', m: '' },
-    { n: '04', t: 'That is basically the whole thing together', m: '' },
+    { n: '04', t: 'That is basically the whole thing', m: '' },
   ];
   return (
     <section id="lore" className="section">
