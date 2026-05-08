@@ -110,43 +110,6 @@ function Roadmap() {
   );
 }
 
-function Community() {
-  const rules = [
-    { n: '01', t: 'Helmet stays on' },
-    { n: '02', t: 'No promises, no roadmap' },
-    { n: '03', t: 'Be nice to other astronauts' },
-    { n: '04', t: 'The chart is not the lore' },
-  ];
-  const msgs = [
-    { who: '@astroboii_42', what: 'the helmet stays on. that is the entire whitepaper.' },
-    { who: '@lostkid', what: "i'm somehow calmer in this orbit." },
-    { who: '@orbital.gif', what: 'compass is decorative. the candle is real.' },
-    { who: '@nofloor', what: 'wrong planet, right chain.' },
-  ];
-  return (
-    <section id="community" className="section">
-      <div className="wrap">
-        <SectionHead num="04" label="Transmissions" title="He posted" accent="first" right="The chat is the protocol. The memes are the roadmap. The community decides what flies." />
-        <div className="community">
-          <div className="community-text reveal">
-            <h3>Four <span className="accent">rules</span>.<br/>One helmet.</h3>
-            <p>We are not a movement. We are a coin with a costume and a community that keeps showing up. That is, somehow, the whole product.</p>
-            <div className="community-rules">
-              {rules.map((r,i) => (
-                <div key={i} className="community-rule">
-                  <span className="n">{r.n}</span>
-                  <span className="t">{r.t}</span>
-                </div>
-              ))}
-            </div>
-            <button className="btn btn-primary btn-lg">Join Telegram <Arrow/></button>
-          </div>
-        </div>
-      </div>
-    </section>
-  );
-}
-
 function Final({ isLaunched }) {
   return (
     <section className="final">
@@ -215,4 +178,4 @@ function Footer() {
   );
 }
 
-window.A2 = { Lore, Token, Roadmap, Community, Final, Footer };
+window.A2 = { SectionHead, Lore, Token, Roadmap, Final, Footer };
