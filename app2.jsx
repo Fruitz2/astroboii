@@ -13,10 +13,10 @@ function SectionHead({ num, label, title, accent, right }) {
 
 function Lore() {
   const items = [
-    { n: '01', t: 'A tiny astronaut', m: 'Lost in space' },
-    { n: '02', t: 'A broken compass', m: 'Points nowhere' },
-    { n: '03', t: 'A shitty chart', m: 'Goes up and down' },
-    { n: '04', t: 'That is basically', m: 'The whole thing' },
+    { n: '01', t: 'A tiny astronaut', m: '' },
+    { n: '02', t: 'A broken compass', m: '' },
+    { n: '03', t: 'A shitty chart', m: '' },
+    { n: '04', t: 'That is basically the whole thing together', m: '' },
   ];
   return (
     <section id="lore" className="section">

@@ -6,7 +6,7 @@ const ASTRO_CONFIG = /*EDITMODE-BEGIN*/{
   "tax": "0%",
   "chain": "Solana",
   "launchPlatform": "Pump.fun",
-  "contractAddress": "B0iiAstr0n4ut5N3eze1nH3lm3tPump17F7nM00n42",
+  "contractAddress": "Will be updated soon",
   "pumpFunUrl": "https://pump.fun",
   "telegramUrl": "https://t.me/astroboiisol",
   "xUrl": "https://x.com/astroboiionsol",
@@ -183,16 +183,4 @@ function Ticker({ isLaunched }) {
   );
 }
 
-function Statement() {
-  const items = ['He posted first', '★', 'You see it late', '★', 'Space came from astroboii', '★', 'No team', '★', 'Zero tax', '★', 'Maximum conviction', '★'];
-  const seq = [...items, ...items, ...items];
-  return (
-    <div className="statement">
-      <div className="statement-track">
-        {seq.map((t, i) => <span key={i} className={t === '★' ? 'star' : ''}>{t}</span>)}
-      </div>
-    </div>
-  );
-}
-
-window.A1 = { ASTRO_CONFIG, Arrow, CopyIc, Check, Starfield, useReveal, Navbar, MobileMenu, Hero, Ticker, Statement };
+window.A1 = { ASTRO_CONFIG, Arrow, CopyIc, Check, Starfield, useReveal, Navbar, MobileMenu, Hero, Ticker };
