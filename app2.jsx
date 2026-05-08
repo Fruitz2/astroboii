@@ -44,7 +44,7 @@ function Token() {
   return (
     <section id="token" className="section">
       <div className="wrap">
-        <SectionHead num="02" label="Token" title="The contract is" accent="live" right="He posted first. You see it late. One billion supply. Zero tax. The contract is live." />
+        <SectionHead num="02" label="Token" title="The contract is" accent="live" right="You see it late. One billion supply. Zero tax. The contract is live." />
         <div className="token-grid">
           <div className="token-main reveal">
             <div className="head"><span>Astroboii / SPL Token</span><span className="live">{c.isLaunched ? 'Live' : 'Standby'}</span></div>
@@ -184,7 +184,7 @@ function Footer() {
           <div className="footer-brand">
             <img src="assets/astroboii-logo.png" alt="" />
             <h4>Astrobo<span className="accent">ii</span></h4>
-            <p>Astroboii did not come from space. Space came from Astroboii. He posted first. You see it late.</p>
+            <p>Astroboii did not come from space. Space came from Astroboii. You see it late.</p>
           </div>
           <div className="footer-col">
             <h5>Site</h5>

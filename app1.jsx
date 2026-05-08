@@ -8,7 +8,7 @@ const ASTRO_CONFIG = /*EDITMODE-BEGIN*/{
   "launchPlatform": "Pump.fun",
   "contractAddress": "Will be updated soon",
   "pumpFunUrl": "https://pump.fun",
-  "telegramUrl": "https://t.me/astroboiisol",
+  "telegramUrl": "https://t.me/astroboiionsol",
   "xUrl": "https://x.com/astroboiionsol",
   "dexScreenerUrl": "https://dexscreener.com/solana"
 }/*EDITMODE-END*/;
@@ -127,7 +127,7 @@ function Hero({ isLaunched }) {
               <span>Mission 001 / Orbit Window Open</span>
             </div>
             <h1 className="hero-title reveal">SPACE CAME FROM <span className="accent">ASTROBOII</span></h1>
-            <p className="hero-sub reveal">Astroboii did not come from space. Space came from Astroboii. <strong>He posted first.</strong> You see it late.</p>
+            <p className="hero-sub reveal">Astroboii did not come from space. Space came from Astroboii. You see it late.</p>
             <p className="hero-tag reveal">One billion supply. Zero tax. Maximum conviction. That's when it got weird. The helmet stays on.</p>
             <div className="hero-ctas reveal">
               {isLaunched ? <a href={ASTRO_CONFIG.pumpFunUrl} target="_blank" rel="noopener noreferrer" className="btn btn-primary btn-lg">Buy ${ASTRO_CONFIG.ticker}<Arrow/></a> : <button className="btn btn-primary btn-lg">Launching soon<Arrow/></button>}
